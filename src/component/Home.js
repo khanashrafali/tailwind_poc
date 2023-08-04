@@ -1,7 +1,10 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Slider from "react-slick";
 
 function Home() {
+  const navigate = useNavigate();
+
   const logoList = {
     type: "logo",
     list: [
@@ -392,7 +395,10 @@ function Home() {
             contracts or commitments.
           </p>
           <div className="flex justify-start mb-[80px]">
-            <button className="rounded-[30px] font-[Nobel-bold] text-[12px] font-bold tracking-[3.6px] mr-[20px] py-[5px] px-[20px] h-[36px] text-white bg-[#ff6c00] hover:bg-[#ff6c00] hover:text-[#fff]">
+            <button
+              onClick={() => navigate("/join")}
+              className="rounded-[30px] font-[Nobel-bold] text-[12px] font-bold tracking-[3.6px] mr-[20px] py-[5px] px-[20px] h-[36px] text-white bg-[#ff6c00] hover:bg-[#ff6c00] hover:text-[#fff]"
+            >
               Join now
             </button>
             <button className="rounded-[30px] font-[Nobel-bold] text-[12px] font-bold tracking-[3.6px] mr-0 py-[5px] px-[20px] h-[36px] text-[#ff6c00] bg-white hover:bg-white hover:text-[#ff6c00]">

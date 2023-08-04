@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 
 const Header = () => {
-  //   const navigate = useNavigate();
+  const navigate = useNavigate();
   //   const [showMenu, setShowMenu] = useState(false);
 
   //   const toggleMenu = () => {
@@ -67,12 +67,18 @@ const Header = () => {
                 );
               })}
               <li className="inline-block relative w-auto px-0 text-left py-[8px]">
-                <a className="flex text-center justify-center items-center box-border min-w-[64px] select-none font-[500] py-[6px] px-[8px] font-[Nobel-Bold] uppercase text-[12px] rounded-[30px] tracking-[2px] leading-normal transition-all duration-300 ease-in-out outline-none my-0 mx-[6px] bg-[#ff6c00] w-[108px] h-[36px] border-none text-white xl:w-auto xl:h-auto xl:inline-flex">
+                <a
+                  onClick={() => navigate("/join")}
+                  className="flex text-center justify-center items-center box-border min-w-[64px] select-none font-[500] py-[6px] px-[8px] font-[Nobel-Bold] uppercase text-[12px] rounded-[30px] tracking-[2px] leading-normal transition-all duration-300 ease-in-out outline-none my-0 mx-[6px] bg-[#ff6c00] w-[108px] h-[36px] border-none text-white xl:w-auto xl:h-auto xl:inline-flex"
+                >
                   Join
                 </a>
               </li>
               <li className="inline-block relative w-auto px-0 text-left py-[8px]">
-                <button className="flex text-center justify-center items-center box-border min-w-[64px] select-none font-[500] py-[6px] px-[8px] font-[Nobel-Bold] uppercase text-[12px] rounded-[30px] tracking-[2px] leading-normal transition-all duration-300 ease-in-out outline-none my-0 mx-[6px] bg-transparent w-[108px] h-[36px] border-solid border-[1px] border-[#ff6c00] text-white xl:w-auto xl:h-auto xl:inline-flex">
+                <button
+                  onClick={() => navigate("/login")}
+                  className="flex text-center justify-center items-center box-border min-w-[64px] select-none font-[500] py-[6px] px-[8px] font-[Nobel-Bold] uppercase text-[12px] rounded-[30px] tracking-[2px] leading-normal transition-all duration-300 ease-in-out outline-none my-0 mx-[6px] bg-transparent w-[108px] h-[36px] border-solid border-[1px] border-[#ff6c00] text-white xl:w-auto xl:h-auto xl:inline-flex"
+                >
                   Login
                 </button>
               </li>

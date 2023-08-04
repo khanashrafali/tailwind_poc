@@ -1,8 +1,11 @@
 import { faFacebookF, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function Footer() {
+  const navigate = useNavigate();
+
   const socialIcon = [
     {
       logo: <img src="/image/instagram.svg" />,
@@ -122,7 +125,10 @@ function Footer() {
                       <p className="text-white mb-[5px] text-[11px] no-underline font-[Nobel-bold] font-bold cursor-pointer leading-[2.09] trackig-[2.75px] hover:transition-all hover:duration-200 hover:ease-in">
                         ABOUT
                       </p>
-                      <p className="text-white mb-[5px] text-[11px] no-underline font-[Nobel-bold] font-bold cursor-pointer leading-[2.09] trackig-[2.75px] hover:transition-all hover:duration-200 hover:ease-in">
+                      <p
+                        onClick={() => navigate("/join")}
+                        className="text-white mb-[5px] text-[11px] no-underline font-[Nobel-bold] font-bold cursor-pointer leading-[2.09] trackig-[2.75px] hover:transition-all hover:duration-200 hover:ease-in"
+                      >
                         JOIN
                       </p>
                     </div>

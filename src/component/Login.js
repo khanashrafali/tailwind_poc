@@ -1,6 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 
 function Login() {
+  const navigate = useNavigate();
+
   return (
     <>
       <div className="flex h-screen">
@@ -43,7 +46,10 @@ function Login() {
             <p className="leading-[1.5] tracking-[0.00938em] font-[Nobel-Bold] uppercase text-[#4a4f55] text-sm font-bold border-solid border-b-[3px] border-[#ff6c04]">
               Login
             </p>
-            <p className="leading-[1.5] tracking-[0.00938em] font-[Nobel-Bold] uppercase text-[#4a4f55] font-bold">
+            <p
+              onClick={() => navigate("/join")}
+              className="leading-[1.5] tracking-[0.00938em] font-[Nobel-Bold] uppercase text-[#4a4f55] font-bold"
+            >
               Signup
             </p>
           </div>
