@@ -16,7 +16,7 @@ function Join() {
             backgroundImage: "url(/image/rightSlice.svg)",
           }}
         ></div>
-        <div className="relative pt-[82px] bg-white xl:h-full h-[600px]">
+        <div className="relative pt-[82px] bg-white xl:h-full min-h-[600px] h-full">
           <div className="flex justify-center items-center flex-col mb-[20px]">
             <p className="font-[Nobel-Book] text-[21px] uppercase tracking-[5.25px] text-center text-[#151515] mb-[13px]">
               GET PIRKX WELLBEING BENEFITS
