@@ -103,31 +103,34 @@ function Footer() {
             <div className="flex gap-[30px] xmd:gap-[15px] xmd:flex-wrap xmd:w-full xmd:flex xmd:flex-col">
               <div className="flex flex-col text-left">
                 <div className="border-l-2 border-solid border-gray-500 pl-[28px] xl:border-l-0 xl:pl-0">
-                  <p className="text-[13px] font-bold text-white opacity-50 font-[Nobel-bold] leading-[1.54] tracking-[3.25px]">
+                  <p className="text-[13px] mb-[16px] font-bold text-white opacity-50 font-[Nobel-bold] leading-[1.54] tracking-[3.25px]">
                     COMPANY
                   </p>
                   <div className="flex gap-[25px] xmd:gap-[15px] xmd:flex-wrap xmd:w-full xmd:flex xmd:flex-col">
                     <div>
-                      <p className="text-white mb-[5px] text-[11px] no-underline font-[Nobel-bold] font-bold cursor-pointer leading-[2.09] trackig-[2.75px] hover:transition-all hover:duration-200 hover:ease-in">
+                      <p
+                        onClick={() => navigate("/personal")}
+                        className="text-white mb-[5px] text-[11px] no-underline font-[Nobel-bold] font-bold cursor-pointer leading-[2.09] tracking-[2.75px] hover:transition-all hover:duration-200 hover:ease-in"
+                      >
                         PERSONAL
                       </p>
-                      <p className="text-white mb-[5px] text-[11px] no-underline font-[Nobel-bold] font-bold cursor-pointer leading-[2.09] trackig-[2.75px] hover:transition-all hover:duration-200 hover:ease-in">
+                      <p className="text-white mb-[5px] text-[11px] no-underline font-[Nobel-bold] font-bold cursor-pointer leading-[2.09] tracking-[2.75px] hover:transition-all hover:duration-200 hover:ease-in">
                         BUSINESS
                       </p>
-                      <p className="text-white mb-[5px] text-[11px] no-underline font-[Nobel-bold] font-bold cursor-pointer leading-[2.09] trackig-[2.75px] hover:transition-all hover:duration-200 hover:ease-in">
+                      <p className="text-white mb-[5px] text-[11px] no-underline font-[Nobel-bold] font-bold cursor-pointer leading-[2.09] tracking-[2.75px] hover:transition-all hover:duration-200 hover:ease-in">
                         PRICING
                       </p>
                     </div>
                     <div>
-                      <p className="text-white mb-[5px] text-[11px] no-underline font-[Nobel-bold] font-bold cursor-pointer leading-[2.09] trackig-[2.75px] hover:transition-all hover:duration-200 hover:ease-in">
+                      <p className="text-white mb-[5px] text-[11px] no-underline font-[Nobel-bold] font-bold cursor-pointer leading-[2.09] tracking-[2.75px] hover:transition-all hover:duration-200 hover:ease-in">
                         SPOTLIGHT
                       </p>
-                      <p className="text-white mb-[5px] text-[11px] no-underline font-[Nobel-bold] font-bold cursor-pointer leading-[2.09] trackig-[2.75px] hover:transition-all hover:duration-200 hover:ease-in">
+                      <p className="text-white mb-[5px] text-[11px] no-underline font-[Nobel-bold] font-bold cursor-pointer leading-[2.09] tracking-[2.75px] hover:transition-all hover:duration-200 hover:ease-in">
                         ABOUT
                       </p>
                       <p
                         onClick={() => navigate("/join")}
-                        className="text-white mb-[5px] text-[11px] no-underline font-[Nobel-bold] font-bold cursor-pointer leading-[2.09] trackig-[2.75px] hover:transition-all hover:duration-200 hover:ease-in"
+                        className="text-white mb-[5px] text-[11px] no-underline font-[Nobel-bold] font-bold cursor-pointer leading-[2.09] tracking-[2.75px] hover:transition-all hover:duration-200 hover:ease-in"
                       >
                         JOIN
                       </p>
@@ -137,29 +140,29 @@ function Footer() {
               </div>
               <div className="flex flex-col text-left">
                 <div className="border-l-2 border-solid border-gray-500 pl-[28px] xl:border-l-0 xl:pl-0">
-                  <p className="text-[13px] font-bold text-white opacity-50 font-[Nobel-bold] leading-[1.54] tracking-[3.25px]">
+                  <p className="text-[13px] mb-[16px] font-bold text-white opacity-50 font-[Nobel-bold] leading-[1.54] tracking-[3.25px]">
                     HELP
                   </p>
-                  <p className="text-white mb-[5px] text-[11px] no-underline font-[Nobel-bold] font-bold cursor-pointer leading-[2.09] trackig-[2.75px] hover:transition-all hover:duration-200 hover:ease-in">
+                  <p className="text-white mb-[5px] text-[11px] no-underline font-[Nobel-bold] font-bold cursor-pointer leading-[2.09] tracking-[2.75px] hover:transition-all hover:duration-200 hover:ease-in">
                     CALCULATE MY SAVINGS
                   </p>
-                  <p className="text-white mb-[5px] text-[11px] no-underline font-[Nobel-bold] font-bold cursor-pointer leading-[2.09] trackig-[2.75px] hover:transition-all hover:duration-200 hover:ease-in">
+                  <p className="text-white mb-[5px] text-[11px] no-underline font-[Nobel-bold] font-bold cursor-pointer leading-[2.09] tracking-[2.75px] hover:transition-all hover:duration-200 hover:ease-in">
                     HELP ME CHOOSE
                   </p>
-                  <p className="text-white mb-[5px] text-[11px] no-underline font-[Nobel-bold] font-bold cursor-pointer leading-[2.09] trackig-[2.75px] hover:transition-all hover:duration-200 hover:ease-in">
+                  <p className="text-white mb-[5px] text-[11px] no-underline font-[Nobel-bold] font-bold cursor-pointer leading-[2.09] tracking-[2.75px] hover:transition-all hover:duration-200 hover:ease-in">
                     FAQS
                   </p>
                 </div>
               </div>
               <div className="flex flex-col text-left">
                 <div className="border-l-2 border-solid border-gray-500 pl-[28px] xl:border-l-0 xl:pl-0">
-                  <p className="text-[13px] font-bold text-white opacity-50 font-[Nobel-bold] leading-[1.54] tracking-[3.25px]">
+                  <p className="text-[13px] mb-[16px] font-bold text-white opacity-50 font-[Nobel-bold] leading-[1.54] tracking-[3.25px]">
                     GET IN TOUCH
                   </p>
-                  <p className="text-white mb-[5px] text-[11px] no-underline font-[Nobel-bold] font-bold cursor-pointer leading-[2.09] trackig-[2.75px] hover:transition-all hover:duration-200 hover:ease-in">
+                  <p className="text-white mb-[5px] text-[11px] no-underline font-[Nobel-bold] font-bold cursor-pointer leading-[2.09] tracking-[2.75px] hover:transition-all hover:duration-200 hover:ease-in">
                     CONTACT US
                   </p>
-                  <p className="text-white mb-[5px] text-[11px] no-underline font-[Nobel-bold] font-bold cursor-pointer leading-[2.09] trackig-[2.75px] hover:transition-all hover:duration-200 hover:ease-in">
+                  <p className="text-white mb-[5px] text-[11px] no-underline font-[Nobel-bold] font-bold cursor-pointer leading-[2.09] tracking-[2.75px] hover:transition-all hover:duration-200 hover:ease-in">
                     PRESS
                   </p>
                   <div className="h-[28px]" />
@@ -167,10 +170,10 @@ function Footer() {
               </div>
               <div className="flex flex-col text-left">
                 <div className="border-l-2 border-solid border-gray-500 pl-[28px] xl:border-l-0 xl:pl-0">
-                  <p className="text-[13px] font-bold text-white opacity-50 font-[Nobel-bold] leading-[1.54] tracking-[3.25px]">
+                  <p className="text-[13px] mb-[16px] font-bold text-white opacity-50 font-[Nobel-bold] leading-[1.54] tracking-[3.25px]">
                     NEWSLETTER
                   </p>
-                  <p className="text-white mb-[10px] text-[19px] no-underline font-[Nobel-light] font-[300] cursor-pointer leading-[1.47] trackig-normal hover:transition-all hover:duration-200 hover:ease-in">
+                  <p className="text-white mb-[10px] text-[19px] no-underline font-[Nobel-light] font-[300] cursor-pointer leading-[1.47] tracking-normal hover:transition-all hover:duration-200 hover:ease-in">
                     Keep up-to-date with all our exciting news and <br /> get
                     wellbegings tips in your inbox
                   </p>
@@ -190,7 +193,7 @@ function Footer() {
           </div>
         </div>
       </div>
-      <div className="flex justify-between items-center relative py-[28px] pr-[60px] pl-[64px] bg-[#404143] w-full lg:py-[70px] lg:pr-0 lg:pl-[35px] lg:flex-col lg:items-start">
+      <div className="flex justify-between items-center relative py-[28px] pr-[60px] pl-[64px] bg-[#404143] w-full lg:py-[70px] lg:pr-0 lg:pl-[35px] lg:flex-col">
         <div className="bg-[#d30b55] rounded-[50%] h-[59px] w-[59px] absolute right-[65px] z-10 top-0 -m-[40px] flex items-center justify-center">
           <img src="/image/chat.svg" className="text-white text-[36px]" />
         </div>

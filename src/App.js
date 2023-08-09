@@ -1,4 +1,5 @@
 import logo from "./logo.svg";
+import "./App.css";
 import "./input.css";
 import Card from "./component/Card";
 import OurSevices from "./component/OurServices";
@@ -8,6 +9,7 @@ import Header from "./component/Header";
 import Home from "./component/Home";
 import Footer from "./component/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Personal from "./component/Personal";
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
         <Header />
         <Routes>
           <Route exact path="/" Component={Home} />
+          <Route path="/personal" Component={Personal} />
           <Route path="/join" Component={Join} />
           <Route path="/login" Component={Login} />
         </Routes>

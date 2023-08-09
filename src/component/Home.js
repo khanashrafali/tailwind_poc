@@ -365,7 +365,7 @@ function Home() {
 
   return (
     <>
-      <div className="flex min-h-screen flex-col relative h-auto mt-0">
+      <div className="flex w-full min-h-screen flex-col relative h-auto mt-0">
         <div
           className="absolute left-0 top-0 w-full h-full brightness-50 bg-cover -z-10 md:h-auto bg-no-repeat bg-top -mt-[4px]"
           style={{
@@ -374,7 +374,7 @@ function Home() {
         ></div>
         <div className="relative box-border pt-[238px] pr-0 pb-0 pl-[86px]">
           <div
-            className="absolute left-0 top-0 w-full h-[700px] brightness-50 bg-cover -z-10 bg-no-repeat md:pt-[156px] md:px-[50px] md:pb-0"
+            className="absolute left-0 top-0 w-full h-[700px] brightness-50 -z-10 bg-no-repeat md:pt-[156px] md:px-[50px] md:pb-0"
             style={{
               backgroundImage: "url(/image/landing-black-curve.svg)",
             }}
@@ -415,13 +415,13 @@ function Home() {
       </div>
       <div className="flex flex-wrap relative justify-end py-[90px] pr-[40px] pl-[400px] bg-[rgba(60,191,174,0.1)] xl:justify-center xl:flex-col xl:items-center xl:pl-[40px] xl:pb-0">
         <div className="flex flex-wrap w-full">
-          <div className="flex justify-center items-center flex-row w-full">
-            <div className="basis-1/2 flex-grow-0 max-w-[50%]">
+          <div className="flex justify-center items-center flex-row w-full xmd:flex-col">
+            <div className="basis-1/2 flex-grow-0 xmd:max-w-[50%]">
               <p className="mt-0 uppercase font-[Nobel-Book] text-[21px] not-italic tracking-[5.25px] text-center text-[#3cbfae] leading-[1.5] sm:mb-[10px]">
                 trusted by the people we work with
               </p>
             </div>
-            <div className="basis-1/2 flex-grow-0 max-w-[50%]">
+            <div className="basis-1/2 flex-grow-0 xmd:max-w-[50%]">
               <div className="flex items-center justify-center gap-[20px] 2xl:gap-[20px] xl:gap-[50px] lg:gap-[25px] flex-wrap w-full">
                 {logoList?.list?.map((item, index) => {
                   return (
@@ -429,7 +429,11 @@ function Home() {
                       className="max-w-[150px] w-full text-center py-[10px] px-0 2xl:max-w-[120px] xmd:max-w-[150px] sm:py-[20px] sm:px-0"
                       key={index}
                     >
-                      <img src={item?.src} alt={item?.altLogo} />
+                      <img
+                        className="max-w-full"
+                        src={item?.src}
+                        alt={item?.altLogo}
+                      />
                     </div>
                   );
                 })}
@@ -445,7 +449,7 @@ function Home() {
         </div>
       </div>
       <div className="flex text-white flex-wrap w-full">
-        <div className="basis-1/2 bg-[#3cbfae]">
+        <div className="basis-1/2 bg-[#3cbfae] xmd:basis-full">
           <div className="ml-[8%]">
             <div className="flex flex-wrap w-full items-end justify-between mt-[79px] mb-[25px]">
               <p
@@ -508,7 +512,7 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="basis-1/2 bg-[#f5f5f5] relative">
+        <div className="basis-1/2 bg-[#f5f5f5] relative xmd:basis-full">
           <div className="flex justify-center flex-col items-center flex-wrap py-0 px-[26px]">
             <p className="font-[Nobel-Book] font-[400] text-[21px] not-italic tracking-[5.25px] text-start text-[#3cbfae] mt-[77px] uppercase mb-[25px]">
               FEATURES
@@ -560,7 +564,7 @@ function Home() {
             Awesome wellbeing benefits at an extremely affordable price.
           </p>
         </div>
-        <div className="flex flex-wrap w-calc-width my-[52px] p-0 justify-center">
+        <div className="flex flex-wrap w-full my-[52px] p-0 justify-center">
           {bottomCard?.map((item, index) => {
             const { backgroundColor, color, title, isVal } = item || "";
             const RelativePos =
@@ -573,7 +577,7 @@ function Home() {
             console.log({ hovering, textColor, RelativePos, bgColor });
             return (
               <div
-                className={` max-w-[497px] basis-1/3 pt-[54px] pb-[53px] px-0 relative transition-all duration-300 ease-in-out flex justify-center items-center flex-col hover:bg-${backgroundColor}`}
+                className={` max-w-[497px] basis-1/3 pt-[54px] pb-[53px] px-0 relative transition-all duration-300 ease-in-out flex justify-center items-center flex-col hover:bg-${backgroundColor} xmd:basis-full`}
                 style={{ backgroundColor: bgColor, color: color }}
                 onMouseEnter={() => onMouseEnter(title)}
                 onMouseLeave={onMouseLeave}
@@ -655,7 +659,7 @@ function Home() {
       </div>
       <div className="flex flex-wrap w-full">
         <div
-          className="relative basis-1/2 flex-grow-0 min-h-[480px] flex justify-center items-center flex-col bg-no-repeat bg-cover"
+          className="relative basis-1/2 flex-grow-0 min-h-[480px] flex justify-center items-center flex-col bg-no-repeat bg-cover xmd:basis-full"
           style={{ backgroundImage: "url(/image/stella_image.png)" }}
         >
           <div className="absolute w-[480px] h-full w-1/2 mx-0 mr-0 ml-[480px] right-0 pt-[44.7px] pr-[70px] pb-[51.5px] pl-[71px] bg-[rgb(0,0,0,0.5)]">
@@ -680,12 +684,12 @@ function Home() {
             </div>
           </div>
         </div>
-        <div className="basis-1/2 flex-grow-0">
+        <div className="basis-1/2 flex-grow-0 xmd:basis-full">
           <div className="flex flex-wrap w-full">
             {[personalMember, businessMember]?.map((item, index) => {
               return (
                 <div
-                  className="pt-[71px] pb-[81.7px] px-[10px] min-h-[480px] flex justify-center items-center flex-col basis-1/2 flex-grow-0"
+                  className="pt-[71px] pb-[81.7px] px-[10px] min-h-[480px] flex justify-center items-center flex-col basis-1/2 flex-grow-0 xmd:basis-full"
                   style={{
                     backgroundColor: index === 0 ? "#fab70a" : "#009ddb",
                   }}
@@ -721,7 +725,7 @@ function Home() {
               backgroundImage: "url(/image/bgHappy.svg)",
             }}
           ></div>
-          <div className="basis-1/2 flex-grow-0 pl-[2%]">
+          <div className="basis-1/2 flex-grow-0 pl-[2%] xmd:basis-full">
             <div>
               <img src="/image/Icon-Chat.svg" className="w-[27px] h-[30px]" />
               <p className="font-[Nobel-light] text-[28px] my-[20px] font-[300] max-w-[510px] leading-[1.5] tracking-[0.00938em]">
@@ -733,7 +737,7 @@ function Home() {
                 corporations. Whoever you are and whatever you do, our
                 affordable wellbeing benefits are for everyone.
               </p>
-              <div className="flex gap-[40px] mt-[30px] w-full flex-wrap">
+              <div className="flex gap-[40px] mt-[30px] w-full flex-wrap xmd:basis-full">
                 <div className="flex items-center cursor-pointer flex-col">
                   <div className="flex items-center justify-center relative w-[73px] h-[73px]">
                     <img src="/image/bgZoom.png" alt="online demo" />
@@ -770,7 +774,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <div className="basis-1/2 flex-grow-0 flex justify-center">
+          <div className="basis-1/2 flex-grow-0 flex justify-center xmd:basis-full">
             <img
               className="max-w-[570.5px] min-h-[559.2px] w-full z-20"
               src="/image/whiteHappier.svg"
@@ -796,7 +800,7 @@ function Home() {
         </div> */}
       </div>
       <div className="flex bg-[#EC6408] w-full flex-wrap">
-        <div className="relative w-full basis-1/2">
+        <div className="relative w-full basis-1/2 xmd:basis-full">
           <div
             className="absolute left-0 top-0 h-[293px] bg-contain w-[222px] bg-no-repeat"
             style={{
@@ -813,7 +817,7 @@ function Home() {
             <img src="/image/404-1.svg" alt="" className="w-full" />
           </div>
         </div>
-        <div className="w-full relative bg-[rgb(0,0,0,0.09)] flex items-center justify-center basis-1/2 flex-grow-0">
+        <div className="w-full relative bg-[rgb(0,0,0,0.09)] flex items-center justify-center basis-1/2 flex-grow-0 xmd:basis-full">
           <div
             className="absolute right-0 top-0 h-full bg-contain w-full bg-no-repeat bg-right"
             style={{

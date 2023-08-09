@@ -1,3 +1,11 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components {
+  .sticky1 {
+    position: fixed;
+    top: 82px;
+    z-index: 3;
+  }
+}
