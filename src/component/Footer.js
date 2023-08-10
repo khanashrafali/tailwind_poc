@@ -114,10 +114,16 @@ function Footer() {
                       >
                         PERSONAL
                       </p>
-                      <p className="text-white mb-[5px] text-[11px] no-underline font-[Nobel-bold] font-bold cursor-pointer leading-[2.09] tracking-[2.75px] hover:transition-all hover:duration-200 hover:ease-in">
+                      <p
+                        onClick={() => navigate("/business")}
+                        className="text-white mb-[5px] text-[11px] no-underline font-[Nobel-bold] font-bold cursor-pointer leading-[2.09] tracking-[2.75px] hover:transition-all hover:duration-200 hover:ease-in"
+                      >
                         BUSINESS
                       </p>
-                      <p className="text-white mb-[5px] text-[11px] no-underline font-[Nobel-bold] font-bold cursor-pointer leading-[2.09] tracking-[2.75px] hover:transition-all hover:duration-200 hover:ease-in">
+                      <p
+                        onClick={() => navigate("/pricing")}
+                        className="text-white mb-[5px] text-[11px] no-underline font-[Nobel-bold] font-bold cursor-pointer leading-[2.09] tracking-[2.75px] hover:transition-all hover:duration-200 hover:ease-in"
+                      >
                         PRICING
                       </p>
                     </div>

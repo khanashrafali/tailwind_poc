@@ -664,7 +664,7 @@ function Home() {
         >
           <div className="absolute w-[480px] h-full w-1/2 mx-0 mr-0 ml-[480px] right-0 pt-[44.7px] pr-[70px] pb-[51.5px] pl-[71px] bg-[rgb(0,0,0,0.5)]">
             <img src="/image/quote_icon.svg" alt="quote" />
-            <p className="font-[Corbel] text-[19px] keading-[1.47] tracking-normal text-white mb-[20px] max-w-[699px]">
+            <p className="font-[Corbel] text-[19px] leading-[1.47] tracking-normal text-white mb-[20px] max-w-[699px]">
               We’re here for you when life gets a little complicated too, with
               mental health resilience coaching, counselling, virtual gym
               classes, physiotherapy, nutrition and health tips, budgeting, debt

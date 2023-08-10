@@ -11,6 +11,7 @@ import Footer from "./component/Footer";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Personal from "./component/Personal";
 import Business from "./component/Business";
+import Pricing from "./component/Pricing";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
           <Route exact path="/" Component={Home} />
           <Route path="/personal" Component={Personal} />
           <Route path="/business" Component={Business} />
+          <Route path="/pricing" Component={Pricing} />
           <Route path="/join" Component={Join} />
           <Route path="/login" Component={Login} />
         </Routes>
