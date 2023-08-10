@@ -435,7 +435,7 @@ function Personal() {
           <p className="flex justify-center items-center text-center text-white text-[21px] tracking-[5.25px] font-[400] leading-[1.5] font-[Nobel-book] uppercase mt-0 z-10 md:text-[20px]">
             prikx Membership
           </p>
-          <p className="flex justify-center items-center text-center text-white text-[4.375em] tracking-[17.5px] font-bold leading-normal mb-[26px] font-[Nobel-bold] uppercase mt-[18px] z-10 md:text-[20px]">
+          <p className="flex justify-center items-center text-center text-white text-[4.375em] tracking-[17.5px] font-bold leading-normal mb-[26px] font-[Nobel-Bold] uppercase mt-[18px] z-10 md:text-[20px]">
             FOR MYSELF
           </p>
           <div className="flex flex-col items-center flex-wrap w-full">
