@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 function Business() {
   const [isSticky, setSticky] = useState(false);
@@ -18,6 +18,35 @@ function Business() {
       });
     }
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const windscroll =
+        window.pageYOffset || document.documentElement.scrollTop;
+      const sections = document.querySelectorAll("div[id], p[id]");
+      sections.forEach((section) => {
+        const id = section.getAttribute("id");
+        if (
+          section.offsetTop <= windscroll + 250 &&
+          id &&
+          tabList?.includes(id)
+        ) {
+          setTabName(id);
+        }
+      });
+      if (window.pageYOffset > window.innerHeight - 80) {
+        setSticky(true);
+      } else {
+        setSticky(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   const handleTabChange = (e, newValue) => {
     console.log("tablist", newValue);
@@ -516,8 +545,8 @@ function Business() {
         </div>
         <div
           onChange={handleTabChange}
-          className={`backdrop-blur-[11.8px] h-[82px] flex items-center bg-[rgb(0,0,0,0.4)] sticky w-full bottom-0 text-white px-[4%] transition-all duration-200 ease-in-out ${
-            isSticky ? "sticky1" : ""
+          className={`backdrop-blur-[11.8px] h-[82px] flex items-center bg-[rgb(0,0,0,0.4)] w-full bottom-0 text-white px-[4%] transition-all duration-200 ease-in-out ${
+            isSticky ? "sticky1" : "absolute"
           }`}
         >
           {tabList?.map((item) => {
