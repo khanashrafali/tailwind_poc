@@ -14,6 +14,7 @@ import Business from "./component/Business";
 import Pricing from "./component/Pricing";
 import Spotlight from "./component/Spotlight";
 import About from "./component/About";
+import Contact from "./component/Contact";
 
 function App() {
   return (
@@ -27,6 +28,7 @@ function App() {
           <Route path="/pricing" Component={Pricing} />
           <Route path="/spotlight" Component={Spotlight} />
           <Route path="/about" Component={About} />
+          <Route path="/contact-us" Component={Contact} />
           <Route path="/join" Component={Join} />
           <Route path="/login" Component={Login} />
         </Routes>

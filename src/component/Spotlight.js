@@ -205,7 +205,7 @@ function Spotlight() {
         </div>
         <div
           onChange={handleTabChange}
-          className={`backdrop-blur-[11.8px] h-[82px] z-20 flex items-center bg-[rgb(0,0,0,0.4)] w-full bottom-0 text-white px-[4%] transition-all duration-200 ease-in-out ${
+          className={`backdrop-blur-[11.8px] z-30 h-[82px] z-20 flex items-center bg-[rgb(0,0,0,0.4)] w-full bottom-0 text-white px-[4%] transition-all duration-200 ease-in-out ${
             isSticky ? "sticky1" : "absolute"
           }`}
         >

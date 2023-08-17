@@ -248,7 +248,7 @@ function About() {
     },
     {
       name: "JANE HOLLAND",
-      image: "/image/doncobely.png",
+      image: "/image/Jane.svg",
       profession: "GROUP FINANCE DIRECTOR",
     },
     {
@@ -437,8 +437,23 @@ function About() {
         </p>
         <div className="flex justify-center items-center p-[30px] gap-[35px] flex-wrap xmd:flex-col">
           {boardMemberData?.map((item, index) => (
-            <div className=""></div>
+            <div className="m-auto mb-[30px] max-w-[250px] flex justify-center w-full items-center flex-col xmd:mr-[10px] sm:mr-0">
+              <img className="w-full" src={item?.image} alt="people" />
+              <p className="mt-[10px] font-[Nobel-Light] text-[#3cbfae] tracking-[4px] leading-[1.5] font-[400]">
+                {item?.name}
+              </p>
+              <p className="mt-[10px] font-[Nobel-Bold] text-[12px] leading-[1.5] tracking-[0.00938em] font-bold">
+                {item?.profession}
+              </p>
+            </div>
           ))}
+        </div>
+      </div>
+      <div>
+        <div className="w-full flex justify-center flex-col items-center pr-[40px] bg-[#3cbfae] py-[5%] px-[5%]">
+          <p className="uppercase tracking-[2.5px] text-center font-[Nobel-book] font-[500] leading-[1.2] text-[21px] text-white">
+            AFFORDABLE WELLBEING BENEFITS IMPROVING HEALTH, WEALTH AND HAPPINESS
+          </p>
         </div>
       </div>
     </>

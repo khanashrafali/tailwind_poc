@@ -545,7 +545,7 @@ function Business() {
         </div>
         <div
           onChange={handleTabChange}
-          className={`backdrop-blur-[11.8px] h-[82px] flex items-center bg-[rgb(0,0,0,0.4)] w-full bottom-0 text-white px-[4%] transition-all duration-200 ease-in-out ${
+          className={`backdrop-blur-[11.8px] h-[82px] z-30 flex items-center bg-[rgb(0,0,0,0.4)] w-full bottom-0 text-white px-[4%] transition-all duration-200 ease-in-out ${
             isSticky ? "sticky1" : "absolute"
           }`}
         >
@@ -1141,7 +1141,7 @@ function Business() {
           <div className="flex justify-center flex-wrap w-full mt-[30px]">
             <div className="max-w-[1000px] max-h-[385px] w-full h-full text-center relative">
               <img
-                className="max-h-[385px] w-[80%] h-full z-10 relative ml-[90px] mb-[-3.6px]"
+                className="max-h-[385px] z-1 w-[80%] h-full z-10 relative ml-[90px] mb-[-3.6px]"
                 src="/image/device.png"
                 alt="img"
               />

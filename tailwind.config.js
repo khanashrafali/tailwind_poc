@@ -3,7 +3,7 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     screens: {
-      "2xl": { max: "1535px" },
+      "2xl": { max: "1500px" },
       // => @media (max-width: 1535px) { ... }
 
       cxl: { max: "1400px" },
@@ -35,6 +35,9 @@ module.exports = {
         "calc-height": "calc(1.5em + 0.75rem + 2px)",
         "be-height": "calc(100% + 30px)",
         "calc-width": "calc(100% + 2px)",
+        "calc-contackWidth": "calc(100% + 20px)",
+        "calc-formWidth": "calc(100% + 30px)",
+        "calc-form": "calc(1.5em + 0.75rem + 2px)",
       },
       boxShadow: {
         "my-shadow":
@@ -46,7 +49,7 @@ module.exports = {
         "minmax-213": "repeat(auto-fill, minmax(213px, 1fr))",
       },
       screens: {
-        "2xl": { max: "1535px" },
+        "2xl": { max: "1500px" },
         // => @media (max-width: 1535px) { ... }
 
         xl: { max: "1279px" },
