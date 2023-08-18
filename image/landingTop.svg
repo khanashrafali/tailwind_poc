@@ -1,0 +1,30 @@
+<svg id="Component_50_1" data-name="Component 50 – 1" xmlns="http://www.w3.org/2000/svg" width="215.287" height="212.82" viewBox="0 0 215.287 212.82">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #009ddb;
+      }
+
+      .cls-2, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        font-size: 50px;
+        font-family: Nobel-Bold, Nobel;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+      }
+
+      .cls-3 {
+        font-size: 13px;
+        font-family: Corbel;
+      }
+    </style>
+  </defs>
+  <g id="bg">
+    <path id="bg-2" data-name="bg" class="cls-1" d="M533.275,945.91c48.074,29.256,60.291,107,34.65,147.552-13.188,20.007-34.45,26.619-61.935,36.507-27.065,8.305-60.351,19.888-87.891,13.282-54.781-14.3-67-92.049-34.65-147.552C416.125,938.4,484.5,915.413,533.275,945.91Z" transform="translate(-365.742 -932.385)"/>
+  </g>
+  <text id="_4.50" data-name="£4.50" class="cls-2" transform="translate(107.644 121.409)"><tspan x="-68.975" y="0">£4.50</tspan></text>
+  <text id="Per_Person_Per_Month" data-name="Per Person, Per Month" class="cls-3" transform="translate(17.644 135.409)"><tspan x="29.911" y="12">Per Person, Per Month</tspan></text>
+</svg>

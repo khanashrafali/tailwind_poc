@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/tailwind_poc/static/css/main.c51bb0dd.css",
+    "main.js": "/tailwind_poc/static/js/main.0b3883b1.js",
+    "static/js/787.f4f4a9b1.chunk.js": "/tailwind_poc/static/js/787.f4f4a9b1.chunk.js",
+    "static/media/Corbel.svg": "/tailwind_poc/static/media/Corbel.e88b5b6ac0e62e170267.svg",
+    "static/media/Corbel.eot": "/tailwind_poc/static/media/Corbel.13105d009b1f4ff0423d.eot",
+    "static/media/Corbel.ttf": "/tailwind_poc/static/media/Corbel.085f80b5b35657c658d0.ttf",
+    "static/media/Nobel-Book.svg": "/tailwind_poc/static/media/Nobel-Book.1652300e67c702eaf354.svg",
+    "static/media/Nobel-Regular.svg": "/tailwind_poc/static/media/Nobel-Regular.cc8e17349b18a8ca22fb.svg",
+    "static/media/Nobel-Light.svg": "/tailwind_poc/static/media/Nobel-Light.0ac8500d2285953f3cec.svg",
+    "static/media/Nobel-Bold.svg": "/tailwind_poc/static/media/Nobel-Bold.ff6d2d32cd46e9e44ed4.svg",
+    "static/media/Corbel.woff": "/tailwind_poc/static/media/Corbel.157e250c0183c164e85d.woff",
+    "static/media/Nobel-Light.eot": "/tailwind_poc/static/media/Nobel-Light.cfafdae5dd2bd17af25d.eot",
+    "static/media/Nobel-Light.ttf": "/tailwind_poc/static/media/Nobel-Light.c1cf7f1ee241383b9815.ttf",
+    "static/media/Corbel.woff2": "/tailwind_poc/static/media/Corbel.e3c79c4a74b7083cf640.woff2",
+    "static/media/Nobel-Regular.eot": "/tailwind_poc/static/media/Nobel-Regular.e0fc68fa86bccb4f9285.eot",
+    "static/media/Nobel-Regular.ttf": "/tailwind_poc/static/media/Nobel-Regular.d600049cdcc76e710135.ttf",
+    "static/media/Nobel-Book.eot": "/tailwind_poc/static/media/Nobel-Book.0ac5af779d2e6573608c.eot",
+    "static/media/Nobel-Book.ttf": "/tailwind_poc/static/media/Nobel-Book.e900d146c497623f562d.ttf",
+    "static/media/Nobel-Light.woff": "/tailwind_poc/static/media/Nobel-Light.c851c92903ba84e72cf9.woff",
+    "static/media/Nobel-Bold.eot": "/tailwind_poc/static/media/Nobel-Bold.60cd1a26ff9f2207f7d8.eot",
+    "static/media/Nobel-Bold.ttf": "/tailwind_poc/static/media/Nobel-Bold.0a535e317186e956f68b.ttf",
+    "static/media/Nobel-Regular.woff": "/tailwind_poc/static/media/Nobel-Regular.9ee6878121fb137811b0.woff",
+    "static/media/Nobel-Book.woff": "/tailwind_poc/static/media/Nobel-Book.4f814ee5889c1caad83b.woff",
+    "static/media/Nobel-Bold.woff": "/tailwind_poc/static/media/Nobel-Bold.059e4ae0f029c471e63b.woff",
+    "static/media/Nobel-Bold.woff2": "/tailwind_poc/static/media/Nobel-Bold.5d809963d0a9552eacf8.woff2",
+    "static/media/logo.svg": "/tailwind_poc/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/tailwind_poc/index.html",
+    "main.c51bb0dd.css.map": "/tailwind_poc/static/css/main.c51bb0dd.css.map",
+    "main.0b3883b1.js.map": "/tailwind_poc/static/js/main.0b3883b1.js.map",
+    "787.f4f4a9b1.chunk.js.map": "/tailwind_poc/static/js/787.f4f4a9b1.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c51bb0dd.css",
+    "static/js/main.0b3883b1.js"
+  ]
+}

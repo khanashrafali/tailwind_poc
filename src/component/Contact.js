@@ -1,6 +1,7 @@
 import React from "react";
 import TextField from "./TextField";
 import PhoneNumberInput from "./PhoneNumberInput";
+import Recaptcha from "./Recaptcha";
 
 function Contact() {
   const imgJsonValue = [
@@ -156,7 +157,7 @@ function Contact() {
                 <label className="text-[21px] font-[Nobel-Book] tracking-[5.25px] text-[#151515] uppercase whitespace-normal pb-[30px] leading-[0.00938em] sm:tracking-[2px]">
                   YOUR DETAILS
                 </label>
-                <div className="flex flex-wrap w-full gap-[30px] mb-[30px]">
+                <div className="flex flex-wrap w-calc-formWidth mb-[30px]">
                   <div className="basis-1/2 flex-grow-0">
                     <TextField
                       placeholder="First name"
@@ -184,9 +185,75 @@ function Contact() {
                       required
                     />
                   </div>
-                  <div className="basis-1/2 flex-grow-0">
-                    <PhoneNumberInput value="" />
+                  <div className="basis-1/2 flex-grow-0 mt-[14px]">
+                    <PhoneNumberInput placeholder="Phone number" value="" />
                   </div>
+                </div>
+                <label className="text-[21px] font-[Nobel-Book] tracking-[5.25px] text-[#151515] uppercase whitespace-normal pb-[30px] leading-[0.00938em] sm:tracking-[2px]">
+                  HOW CAN WE HELP?
+                </label>
+                <TextField
+                  placeholder="Start writing your message here…"
+                  type="text"
+                  name="message"
+                  value=""
+                  multiline={true}
+                  rows={4}
+                />
+                <div className="mt-[54px]">
+                  <label className="inline-flex cursor-pointer ml-[-11px] mr-[16px] items-start font-[Corbel] text-[19px] tracking-normal text-[#4a4f55]">
+                    <span
+                      className="relative h-[35px] w-[42px] bg-cover mr-[8px] bg-no-repeat rounded-[50%] p-[9px]"
+                      style={{
+                        backgroundImage: "url(/image/checkbox-outline.svg )",
+                      }}
+                    >
+                      <input
+                        className="absolute opacity-0 w-full h-full top-0 left-0 m-0 p-0 z-10 bg-white border-solid border-b-[1px] border-b-[#d50458] text-[#151515]"
+                        type="checkbox"
+                        name="isTermAccepted"
+                        checked={false}
+                      />
+                    </span>
+                    <p className="pt-[6px] font-[400] font-[Corbel] text-[1rem] leading-[1.5] tracking-[0.00938em]">
+                      Please tick to agree to our{" "}
+                      <span className="text-[#ff6c00] underline text-[19px] font-[Corbel]">
+                        Terms & Conditions
+                      </span>{" "}
+                      and{" "}
+                      <span className="text-[#ff6c00] underline text-[19px] font-[Corbel]">
+                        Privacy Policy
+                      </span>
+                      .
+                    </p>
+                  </label>
+                </div>
+                <div className="mb-[22px]">
+                  <label className="inline-flex cursor-pointer ml-[-11px] mr-[16px] items-start font-[Corbel] text-[19px] tracking-normal text-[#4a4f55]">
+                    <span
+                      className="relative h-[35px] w-[42px] bg-cover mr-[8px] bg-no-repeat rounded-[50%] p-[9px]"
+                      style={{
+                        backgroundImage: "url(/image/checkbox-outline.svg )",
+                      }}
+                    >
+                      <input
+                        className="absolute opacity-0 w-full h-full top-0 left-0 m-0 p-0 z-10 bg-white border-solid border-b-[1px] border-b-[#d50458] text-[#151515]"
+                        type="checkbox"
+                        name="isTermAccepted"
+                        checked={false}
+                      />
+                    </span>
+                    <span className="pt-[6px] font-[400] font-[Corbel] text-[1rem] leading-[1.5] tracking-[0.00938em]">
+                      Tick if you would like to be kept up-to-date with all our
+                      exciting news
+                    </span>
+                  </label>
+                </div>
+                <Recaptcha />
+                <div className="mt-[36px]">
+                  <button className="cursor-pointer inline-block text-center uppercase font-[Nobel-Bold] text-[11px] rounded-[30px] tracking-[3.3px] w-[170px] py-[10px] px-[25px] leading-normal outline-none bg-[#ff6c00] text-white transition-all duration-200 ease-in-out">
+                    GET IN TOUCH
+                  </button>
                 </div>
               </div>
             </div>

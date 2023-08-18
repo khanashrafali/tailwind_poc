@@ -15,6 +15,8 @@ import Pricing from "./component/Pricing";
 import Spotlight from "./component/Spotlight";
 import About from "./component/About";
 import Contact from "./component/Contact";
+import Faq from "./component/Faq";
+import TermsAndConditions from "./component/TermsAndConditions";
 
 function App() {
   return (
@@ -29,6 +31,8 @@ function App() {
           <Route path="/spotlight" Component={Spotlight} />
           <Route path="/about" Component={About} />
           <Route path="/contact-us" Component={Contact} />
+          <Route path="/faq" Component={Faq} />
+          <Route path="/terms-and-conditions" Component={TermsAndConditions} />
           <Route path="/join" Component={Join} />
           <Route path="/login" Component={Login} />
         </Routes>

@@ -1,0 +1,71 @@
+.phoneNumber {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.42);
+}
+.PhoneInputCountryIcon {
+  border-radius: 50%;
+  width: 21px;
+  height: 21px;
+}
+.PhoneInputCountryIconImg {
+  border-radius: 50%;
+  object-fit: cover;
+}
+.PhoneInputCountryIcon--border {
+  box-shadow: none;
+}
+.phone-form-group {
+  position: relative;
+  margin-bottom: 20px;
+}
+.phone-form-group .placeholder {
+  position: absolute;
+  top: 8px;
+  left: 42px;
+  background: transparent;
+  font-family: "Corbel";
+  font-size: 19px;
+  color: #151515;
+  font-weight: 400;
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  word-break: break-word;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+}
+.PhoneInputCountrySelectArrow {
+  font-size: 20px;
+  color: #3cbfae;
+  opacity: 1;
+  margin-left: 6px;
+}
+.PhoneInputInput:hover {
+  outline: none;
+}
+.PhoneInputInput:focus {
+  outline: none;
+}
+.PhoneInputInput::before {
+  outline: none;
+}
+.PhoneInputInput::after {
+  outline: none;
+}
+.PhoneInputInput {
+  border: none;
+  border-radius: 0px;
+  font-size: 19px;
+  font-family: Corbel;
+  color: #151515;
+  display: block;
+  width: 100%;
+  font-weight: 400;
+  padding-left: 5px;
+}
+::placeholder {
+  font-family: Corbel;
+  font-size: 19px;
+  color: #151515;
+  font-weight: 400;
+  opacity: 0.6;
+}
