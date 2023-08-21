@@ -1,7 +1,8 @@
 import React from "react";
-import { useNavigation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 function TermsAndConditions() {
+  const navigation = useNavigate();
   const listJson = [
     {
       label: `A pirkx Corporate Member (for example, your employer) has invited you to become a Paid-For pirkx Member, free of charge to you, to show you their appreciation and you would like to accept this invitation and apply to become a Paid-For pirkx Member;
@@ -132,6 +133,7 @@ function TermsAndConditions() {
               <a
                 className="text-[12px] text-[#ff6c00] font-bold tracking-[3.6px] no-underline mt-0 mx-0 mb-[25px] font-[Nobel-Bold] cursor-pointer uppercase"
                 key={item?.label}
+                onClick={() => navigation(item.navigate)}
               >
                 {item.label}
               </a>

@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { StyledButton } from "./Styled";
 
 function Personal() {
   const [isSticky, setSticky] = useState(false);
@@ -716,7 +717,7 @@ function Personal() {
         </div>
         <div className="flex flex-wrap w-full my-0 p-[30px] px-0 justify-center">
           {bottomCard?.map((item, index) => {
-            const { backgroundColor, color, title, isVal } = item || "";
+            const { backgroundColor, color, title, isVal, btn } = item || "";
             const RelativePos =
               hovering === title ? title : hovering ? "" : isVal && title;
             const textColor = RelativePos === title ? "#fff" : color;
@@ -787,8 +788,15 @@ function Personal() {
                     <button
                       className={`rounded-[30px] font-[Nobel-bold] text-[12px] font-bold tracking-[3.6px] leading-[3px] py-[5px] px-[20px] h-[36px] text-[13px] text-[${
                         RelativePos ? backgroundColor : "#fff"
-                      }] bg-[${!RelativePos ? backgroundColor : "#fff"}]`}
-                    ></button>
+                      }] `}
+                      style={{
+                        backgroundColor: !RelativePos
+                          ? backgroundColor
+                          : "#fff",
+                      }}
+                    >
+                      {btn}
+                    </button>
                   </div>
                 </div>
               </div>
@@ -867,11 +875,9 @@ function Personal() {
                       <p className="font-[Corbel] font-[400] text-[19px] leading-[1.47] tracking-normal text-white text-center pt-[15px] pb-[30px]">
                         {message?.value}
                       </p>
-                      <button
-                        className={`rounded-[30px] font-[Nobel-Bold] text-[12px] font-bold tracking-[3.6px] text-[${item?.bgcolor}] py-[5px] px-[20px] h-[36px] bg-white`}
-                      >
+                      <StyledButton bgcolor={item?.bgcolor}>
                         {title?.value}
-                      </button>
+                      </StyledButton>
                     </div>
                   </div>
                 );
